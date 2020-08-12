@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>JS-REST-SPA</title>
+  <meta name="description" content="JS-REST-SPA">
+  <meta name="author" content="Sajal Sood">
+  <link rel="stylesheet" href="./css/main.css?v=1.0">
+</head>
+
+<body>
+  <div id="store-root" class="store-container">
+    <div class="store-heading">
+        <h1>Welcome to WebMart</h1>
+        <p>Add items to your cart, increase or decrease the quantity</p>
+    </div>
+    <div class="alert-error"></div>
+    <div id="app-login" class="store-grid">
+      <div class="handler">
+        <div>
+          <input class="user-name form-control" type="text" placeholder="Enter User Name Here"/>
+        </div>
+        <div></div>
+        <div>
+          <input type="button" class="btn btn-login" value="Login" />
+        </div>
+      </div>
+    </div>
+    <div id="app-store" class="store-grid">
+      <div class="handler">
+        <div>
+          <input class="add-item form-control" type="text" placeholder="Enter Item Here"/>
+        </div>
+        <div>
+          <input class="add-quant form-control" type="text" placeholder="Enter Quantity Here"/>
+        </div>
+        <div>
+          <input type="button" class="btn btn-add" value="Add" />
+        </div>
+        <div>
+          <input type="button" class="btn btn-logout" value="Logout" />
+        </div>
+      </div>
+      <div class="loading">Loading...</div>
+      <ol class="store item-group"></ol>
+    </div>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
